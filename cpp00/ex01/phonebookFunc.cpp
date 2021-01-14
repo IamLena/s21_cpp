@@ -6,7 +6,7 @@
 /*   By: nalecto <nalecto@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/14 13:16:22 by nalecto           #+#    #+#             */
-/*   Updated: 2021/01/14 14:23:31 by nalecto          ###   ########.fr       */
+/*   Updated: 2021/01/14 17:01:33 by nalecto          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int main(void)
 	std::string	cmd;
 	PhoneBook	book;
 
-	while (cmd != "EXIT")
+	while (1)
 	{
 		std::cout << "enter command: ";
 		std::cin >> cmd;
@@ -25,7 +25,9 @@ int main(void)
 			book.addcontact();
 		else if (cmd == "SEARCH")
 			book.findcontact();
-		else if (cmd != "EXIT")
+		else if (cmd == "EXIT")
+			break;
+		else
 			std::cout << "invalid command. please enter ADD, SEARCH or EXIT\n";
 	}
 	return (0);

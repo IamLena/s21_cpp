@@ -1,9 +1,22 @@
 NAME = myphonebook
 CC = clang++
 FLAGS = -Wall -Wextra -Werror
-SRC = PhoneBook.cpp phonebookFunc.cpp
+SRC = PhoneBook.cpp Contact.cpp phonebookFunc.cpp
 OBJ = $(SRC:.cpp=.o)
-INCLUDES = PhoneBook.hpp
+INCLUDES = PhoneBook.hpp Contact.hpp
 
-all:
-	$(CC) $(FLAGS) -o $(NAME) $(SRC)
+%.o: %.c
+	$(CC) $(FLAGS) -c $< -o $@
+
+all: $(NAME)
+
+$(NAME): $(OBJ)
+	$(CC) $(FLAGS) -o $(NAME) $(OBJ)
+
+clean:
+	rm -f $(OBJ)
+
+fclean: clean
+	rm -f $(NAME)
+
+re: fclean all
