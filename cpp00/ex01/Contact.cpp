@@ -6,7 +6,7 @@
 /*   By: nalecto <nalecto@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/14 14:56:44 by nalecto           #+#    #+#             */
-/*   Updated: 2021/01/14 15:22:09 by nalecto          ###   ########.fr       */
+/*   Updated: 2021/01/14 17:33:03 by nalecto          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,28 +42,17 @@ void	Contact::fillContact()
 
 void	Contact::printcontact()
 {
-	std::cout << "first_name: ";
-	std::cout << this->first_name << std::endl;
-	std::cout << "last_name: ";
-	std::cout << this->last_name << std::endl;
-	std::cout << "nickname: ";
-	std::cout << this->nickname << std::endl;
-	std::cout << "login: ";
-	std::cout << this->login << std::endl;
-	std::cout << "postal_address: ";
-	std::cout << this->postal_address << std::endl;
-	std::cout << "email_address: ";
-	std::cout << this->email_address << std::endl;
-	std::cout << "phone_number: ";
-	std::cout << this->phone_number << std::endl;
-	std::cout << "birthday_date: ";
-	std::cout << this->birthday_date << std::endl;
-	std::cout << "favorite_meal: ";
-	std::cout << this->favorite_meal << std::endl;
-	std::cout << "underwear_color: ";
-	std::cout << this->underwear_color << std::endl;
-	std::cout << "darkest_secret: ";
-	std::cout << this->darkest_secret << std::endl;
+	std::cout << "first_name: " << this->first_name << std::endl;
+	std::cout << "last_name: " << this->last_name << std::endl;
+	std::cout << "nickname: " << this->nickname << std::endl;
+	std::cout << "login: " << this->login << std::endl;
+	std::cout << "postal_address: " << this->postal_address << std::endl;
+	std::cout << "email_address: " << this->email_address << std::endl;
+	std::cout << "phone_number: " << this->phone_number << std::endl;
+	std::cout << "birthday_date: " << this->birthday_date << std::endl;
+	std::cout << "favorite_meal: " << this->favorite_meal << std::endl;
+	std::cout << "underwear_color: " << this->underwear_color << std::endl;
+	std::cout << "darkest_secret: " << this->darkest_secret << std::endl;
 }
 
 std::string 	Contact::alignfield(std::string field, int cellwidth)
