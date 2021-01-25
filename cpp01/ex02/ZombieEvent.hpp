@@ -6,7 +6,7 @@
 /*   By: nalecto <nalecto@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/25 20:55:23 by nalecto           #+#    #+#             */
-/*   Updated: 2021/01/25 21:17:03 by nalecto          ###   ########.fr       */
+/*   Updated: 2021/01/25 21:35:08 by nalecto          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,16 +15,12 @@
 
 # include <iostream>
 # include <string>
-# include <ctime>
-# include <cstdlib>
-# include <unistd.h>
 # include "Zombie.hpp"
 
 class ZombieEvent
 {
 	private:
 		std::string	type;
-		std::string createRandomName();
 	public:
 		ZombieEvent();
 
