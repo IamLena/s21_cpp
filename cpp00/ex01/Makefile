@@ -1,7 +1,7 @@
 NAME = myphonebook
 CC = clang++
 FLAGS = -Wall -Wextra -Werror
-SRC = PhoneBook.cpp Contact.cpp phonebookFunc.cpp
+SRC = PhoneBook.cpp Contact.cpp main.cpp
 OBJ = $(SRC:.cpp=.o)
 INCLUDES = PhoneBook.hpp Contact.hpp
 
@@ -20,3 +20,6 @@ fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
+
+
+.PHONY: re fclean clean all

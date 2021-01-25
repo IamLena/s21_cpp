@@ -6,12 +6,11 @@
 /*   By: nalecto <nalecto@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/14 13:09:53 by nalecto           #+#    #+#             */
-/*   Updated: 2021/01/14 17:17:17 by nalecto          ###   ########.fr       */
+/*   Updated: 2021/01/25 20:25:49 by nalecto          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "PhoneBook.hpp"
-#include <limits>
 
 PhoneBook::PhoneBook()
 {
@@ -26,7 +25,7 @@ void	PhoneBook::displayContactInfo() {
 	{
 		std::cin.clear();
 		std::cin.ignore(10000, '\n');
-		// std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+		// std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); #include <limits> needed
 		std::cout<<"You have entered wrong input"<<std::endl;
 		return;
 	}
